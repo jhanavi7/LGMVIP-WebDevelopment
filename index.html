@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PicS-aRt</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="slider()">
+        <div class="start">
+            <div class="slider">
+              <img src="paris.jpg" id="slideImg">
+              </div>
+              <div class="overlay">
+                  <div class="navbar">
+                      <div class="logo">
+                          <img src="camera.jpeg">
+                      </div>
+                     <div class="menu-icons">
+                         <a href="#home">Home</a>
+                         <a href="#projects">Projects</a>
+                         <a href="#pric">Pricing</a>
+                         <a href="#team">Team</a>
+                         <a href="#review">Review</a>
+                         <a href="#contact">Contact</a>
+                        </div> 
+                     <div class="content">
+                         <h1>Welcome to Zippy!</h1>
+                         <p>The one perfect place where you get to explore and learn things. One page promising to fill all your needs. 
+                         </p>
+                         <div>
+                             <button type="button">Know More</button>
+                             <button type="button">Learn More</button>
+                         </div>
+                     </div>
+                  </div>
+              </div>
+         </div>
+        <script>
+            var slideImg = document.getElementById("slideImg");
+            var images = new Array("paris1.jpg","sanfran.jpg","photographer-man-camera-len.jpg");
+            var len = images.length;
+            var i=0;
+            function slider(){
+                if(i>len-1){
+                    i=0;
+                }
+                slideImg.src = images[i];
+                i++;
+                setTimeout('slider()',3000);
+            }
+        </script>
+<!----Home-->
+<section class="home" id="home">
+<div class="about">
+    <h2> Welcome to Zippy.</h2>
+    <p>This is a place where you<br> can get ideas for your project, and also buy your own lens.<br>Get connected with us so that<br> we can help you out to solve your problems. <br> A place where you can buy and <br>also view our projects for more ideas.<br> 
+    </p>
+    <img src="camlogo.jpg">
+    </div>
+</div>
+<div class="row">
+    <div class="about-col1">
+        <h3>NOTIFICATION</h3>
+        <p>For the regular updates, and for the previous notifications check out here. Our recent updates like about the projects, work will be notified here.</p>
+        <img src="bell.png" id="img1">   
+        <button type="button">LEARN MORE</button>
+    </div>
+    <div class="about-col2">
+        <h3>MESSAGE</h3>
+        <p>Drop a message to get in touch with us. You can share your thoughts, projects and ideas with us. We are here to help you. Reach out to us at any time.</p>
+        <img src="message.jpg" id="img2">
+        <button type="button" >LEARN MORE</button>
+    </div>
+    <div class="about-col3">
+        <h3>ART COLLECTION</h3>
+        <p>All our collections are gathered at one please. Click here to explore it!</p>
+        <img src="cam.jpg" id="img3">
+        <button type="button">LEARN MORE</button>
+    </div>
+</div>
+</section>
+<!--Projects-->
+<section class="projects" id="projects">
+    <div class="pro">
+        <h1>PrOjeCtS</h1>
+    </div>
+</section>
+<section>
+    <div class="project">
+        <div class="column1" style="width: 100%">
+            <img src="sundae.jpeg" id="i1">
+            <div class="co">
+                <p>Sundae the most loveable one for all. Here you find the collections of sundae.</p>
+                <p><button type="button">Explore Me!</button></p>
+            </div>
+        </div>
+        <div class="column2" style="width: 100%">
+            <img src="Rose.jpg" id="i2">
+            <div class="con">
+                <p>Rose the symbol of Love!!</p>
+                <p><button type="button">Explore Me! </button></p>
+            </div>
+        </div>
+        <div class="column3" style="width: 100%">
+            <img src="creative-cam.jpg" id="i3">
+            <div class="cont">
+                <p>Love for camera? You are at the perfect place. Keep Focusing.</p>
+                <p><button type="button">Explore Me! </button></p>
+            </div>
+        </div>
+        <div class="column4" style="width: 100%">
+            <img src="travel.jpg" id="i4">
+            <div class="conte">
+                <p>Love for Travel? You are at the perfect place. Keep Exploring.</p>
+                <p><button type="button">Explore Me! </button></p>
+    </div>
+</section>
+<!--Pricing-->
+<section class ="pricing" id="pricing">
+    <div class="head">
+        <h3>Buy Your LenSes!</h3>
+    </div>
+</section>
+<section class="pric" id="pric">
+    <div class="c1" style="width: 100%;">
+        <img src="Lens-1.jpg" id="len1">
+        <div class="scri">
+            <p>SONY WIDE ANGLE LENS.<br>
+                Time to capture the finest!
+            </p>
+            <p><button type="button"> BuY Me:)</button></p>
+        </div>
+    </div>
+    <div class="c2" style="width: 100%;">
+        <img src="lens-2.jpg" id="len1">
+        <div class="scri">
+            <p>AF-S Micro-NIKKOR 60mm f/2.8G ED lens.<br>
+                Dive under the sea to capture the magnificent things!
+            </p>
+            <p><button type="button"> BuY Me:)</button></p>
+        </div>
+    </div>
+    <div class="c3" style="width: 100%;">
+        <img src="lens-3.jpg" id="len1">
+        <div class="scri">
+            <p>TELEPHOTO lens.<br>
+                Wanna be Professional? <br> then you are the right place!
+            </p>
+            <p><button type="button"> BuY Me:)</button></p>
+        </div>
+    </div>
+</section>
+<section id="pric">
+    <div class="c">
+        <h3>Learning Tutorials</h3>
+    </div>
+    <div class="youtube">
+        <iframe src="https://youtube.com/embed/SlNviMsi0K0" frameborder="40px" width="400px"></iframe>
+         <iframe src="https://youtube.com/embed/tZXIsZxfcRw" frameborder="50"></iframe>
+         <iframe src="https://youtube.com/embed/FBz81ssJV7g" frameborder="50"></iframe>
+         <iframe src="https://youtube.com/embed/ncz1U0TpuGA" frameborder="50"></iframe>
+    </div>
+</section>
+<!---Team-->
+<section id="team">
+    <div class="ti">
+        <h3>Meet the Team</h3>
+    </div>
+    <div class="team_mem">
+        <h3>Ovia Jonson </h3>
+        <h2>Peter John  </h2>
+        <img src="team1.jpg">
+        <img src="team2.jpg">
+    </div>
+    <div class="team_mem">
+        <h3>Scarelet Mary</h3>
+        <h2>Abhinav Gupta</h2>
+        <img src="team3.jpg">
+        <img src="team4.jpg">
+    </div>   
+</section>
+<!-- Newsletter  -->
+<section class="Newsletter">
+    <div class="news">
+        <form action="">
+            <h3>NewsLetter SignUp</h3>
+            <div class="email-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Enter your email" class="box1">
+                <button type="button" name="button" class="box2">SignUp</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!--Review-->
+<section id="review">
+    <div class="card">
+        <div class="image-data">
+            <div class="background-image">
+                <div class="info">
+                    <h3>JuliaScarlett</h3>
+                </div>
+            </div>
+            <div class="postdata">
+                <p class="description"> 
+                    This is a cool website to  know more about the camera, photography and also a great platform to buy camera. I really like the content. Thank you for clearing my doubts.<br><i class="fa fa-heart"></i>
+                </p>   
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image-data">
+            <div class="background-image2">
+                <div class="info">
+                    <h3>KrishnaPallavi</h3>
+                </div>
+            </div>
+            <div class="postdata">
+                <p class="description"> 
+                    This is a perfect place if you are looking for ideas on photography. The team is so supportive and encouraging. They respond to our queires very fast and very gentle.<br><i class="fa fa-heart"></i>
+                </p>   
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image-data">
+            <div class="background-image3">
+                <div class="info">
+                    <h3>HarshaMayur</h3>
+                </div>
+            </div>
+            <div class="postdata">
+                <p class="description"> 
+                    The camera lens are really good.This gave me a lot of information about lenses. Highly recommended <br>if you are looking for lenses.<br><i class="fa fa-camera"></i>
+                </p>   
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image-data">
+            <div class="background-image4">
+                <div class="info">
+                    <h3>SangeethHarsh</h3>
+                </div>
+            </div>
+            <div class="postdata">
+                <p class="description"> 
+                    This made me think out off box and helped me to learn about many things. Great place if you<br> want to explore many things related to photography.<br><i class="fa fa-star"></i>
+                </p>   
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact-->
+<section class="map1" id="contact">
+    <div class="contact">
+        <div class="map">
+            <iframe src="
+            https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946148.6447667945!2d74.06865609074899!3d15.011523838501978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x41f1d28cd1757cd5!2sKarnataka!5e0!3m2!1sen!2sin!4v1631259176240!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="form1">
+            <h2>Get Connected!</h2>
+            <form class="contact" action="", method="POST">
+                <input type="text" placeholder="Name" class="txt">
+                <input type="text" placeholder="Email" class="txt"/>
+                <textarea placeholder="Message" class="txt1" ></textarea>
+                <input type="Submit" placeholder="submit" class="textbtn">
+            </form>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="last">
+      <div class="office">
+        <h3>Office Address</h3>
+        <p>6th Street, Churchill Road <br>Karnataka</p>
+      </div>
+      <div class="social-icons">
+        <h3>Follow Us On!</h3>
+        <p><a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        </p>
+      </div>
+      <div class="Contact-us">
+        <h3>Contact Us  </h3>
+        <p> + 080-8903457<br>
+            info@gmail.com<br>
+            enquiry@zippy.com
+        </p>
+      </div>
+    </div> 
+</section>
+</body>
+</html>
